@@ -15,8 +15,8 @@ public class XROffsetGrabInteractable : XRGrabInteractable
     }
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        attachTransform.position = args.interactableObject.transform.position;
-        attachTransform.rotation = args.interactableObject.transform.rotation;
+        attachTransform.position = args.interactorObject.transform.position;
+        attachTransform.rotation = args.interactorObject.transform.rotation;
         base.OnSelectEntered(args);
     }
 }
